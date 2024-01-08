@@ -1,0 +1,281 @@
+/* Reset de estilos por defecto */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos básicos */
+header {
+    background-color: #f8f9fa;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar-brand {
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Inicio */
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Color de fondo para superposición */
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.overlay h3,
+.overlay p,
+.overlay a {
+    margin-bottom: 10px;
+}
+/* Cierre */
+
+/* Nosotros */
+.fondo .nosotros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.fondo .nosotros .contenido {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.fondo .nosotros h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+.fondo .nosotros p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: aliceblue;
+}
+
+.fondo .nosotros .carousel {
+    width: 100%;
+}
+
+.fondo .nosotros #carouselExampleSlidesOnly {
+    max-width: 400px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.fondo .nosotros .carousel-item img {
+    height: 600px;
+    width: 500px;
+}
+/* Cierre */
+
+/* Tienda */
+.fondo {
+    background-color: black;
+}
+
+.card {
+    margin: 20px;
+    background-color: #f8f9fa;
+}
+/* Cierre */
+
+/*Contacto  Main  */
+.contacto {
+    padding: 60px;
+}
+
+.contacto h1 {
+    font-size: 24px;
+    margin-top: 35px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.contacto p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: aliceblue;
+    text-align: center;
+}
+
+.contacto .conjunto .mapa ul li {
+    color: aliceblue;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.conjunto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.mapa iframe,
+.video iframe {
+    width: 400px;
+    height: 300px;
+}
+/* Cierre */
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+}
+
+li a {
+    text-decoration-line: none;
+    color: #212529;
+}
+
+a:hover {
+    text-decoration: underline;
+    /* O cualquier otro estilo que desees */
+    color: blue;
+}
+/* Cierre */
+
+/* Media Queries */
+@media (min-width: 320px) and (max-width: 768px) {
+    /* Media Queries Header General */
+    .nav-item {
+        text-align: left;
+    }
+
+    .navbar-brand {
+        font-size: 25px;
+    }
+/* Cierre */
+
+    /* Media Queries Nosotros */
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .nosotros .contenido {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .nosotros h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .nosotros p {
+        font-size: 14px;
+        text-align: center;
+    }
+    /* Cierre */
+
+    /* Tienda */
+    .card {
+        margin: 10px auto;
+        float: none;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+    /* Cierre */
+
+    /* Contacto */
+    .conjunto {
+        flex-direction: column;
+    }
+
+    .mapa iframe {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .video iframe {
+        width: 90%;
+        max-width: 90%;
+        height: auto;
+    }
+    /* Cierre */
+
+    /* Media Queries Footer General */
+    footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 15px;
+    }
+
+    footer ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    footer ul li {
+        margin: 0 10px;
+    }
+}
+/* Cierre */
